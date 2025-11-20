@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="README.md" />
+    <File Path="LICENSE" />
+  </Folder>
+  <Folder Name="/Solution Items/assets/">
+    <File Path="assets/assignment.pdf" />
+  </Folder>
+  <Folder Name="/Solution Items/samples/">
+    <File Path="samples/matrix_3x3.txt" />
+    <File Path="samples/matrix_4x4.txt" />
+    <File Path="samples/matrix_16x16.txt" />
+    <File Path="samples/matrix_32x32.txt" />
+    <File Path="samples/matrix_64x64.txt" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/A3.RouteSearchGraphs/A3.RouteSearchGraphs.csproj" />
+  </Folder>
+</Solution>
