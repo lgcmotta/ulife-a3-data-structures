@@ -9,6 +9,7 @@
     <File Path="README.md" />
     <File Path="LICENSE" />
   </Folder>
+  <Folder Name="/Solution Items/.github/" />
   <Folder Name="/Solution Items/.github/workflows/">
     <File Path=".github/workflows/publish.yml" />
   </Folder>
@@ -23,6 +24,7 @@
     <File Path="samples/matrix_64x64.txt" />
   </Folder>
   <Folder Name="/src/">
+    <Project Path="src/A3.RouteSearchGraphs.Benchmarks/A3.RouteSearchGraphs.Benchmarks.csproj" />
     <Project Path="src/A3.RouteSearchGraphs/A3.RouteSearchGraphs.csproj" />
   </Folder>
 </Solution>

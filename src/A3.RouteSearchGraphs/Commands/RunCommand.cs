@@ -38,7 +38,7 @@ internal static class RunCommand
             {
                 var input = Path.GetFullPath(parameters.File);
 
-                var matrix = await input.Parse(token);
+                var matrix = await input.ParseAdjacencyMatrix(token);
 
                 matrix.EnsureValidIndex(parameters.Origin, nameof(parameters.Origin));
                 matrix.EnsureValidIndex(parameters.Destination, nameof(parameters.Destination));

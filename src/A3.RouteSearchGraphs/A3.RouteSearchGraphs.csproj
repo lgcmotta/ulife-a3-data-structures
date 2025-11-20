@@ -15,4 +15,8 @@
     <PackageReference Include="Spectre.Console" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="A3.RouteSearchGraphs.Benchmarks" />
+  </ItemGroup>
+
 </Project>

@@ -1,20 +1,20 @@
 namespace A3.RouteSearchGraphs.Domain.Abstractions;
 
-internal record SearchAlgorithmResult
+public record SearchAlgorithmResult
 {
-    internal required string Name { get; init; }
+    public required string Name { get; init; }
 
-    internal string? Heuristic { get; init; } = string.Empty;
+    public string? Heuristic { get; init; } = string.Empty;
 
-    internal required int Source { get; init; }
+    public required int Source { get; init; }
 
-    internal required int Target { get; init; }
+    public required int Target { get; init; }
 
-    internal List<int> Path { get; init; } = [];
+    public List<int> Path { get; init; } = [];
 
-    internal int? Cost { get; init; }
+    public int? Cost { get; init; }
 
-    internal int? ExpandedNodes { get; init; }
+    public int? ExpandedNodes { get; init; }
 
-    internal required TimeSpan ExecutionTime { get; init; }
+    public required TimeSpan ExecutionTime { get; init; }
 }

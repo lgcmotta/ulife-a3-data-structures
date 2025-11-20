@@ -6,7 +6,7 @@ internal static class AdjacencyMatrixExtensions
 
     extension(string filePath)
     {
-        internal async ValueTask<int[][]> Parse(CancellationToken cancellationToken = default)
+        internal async ValueTask<int[][]> ParseAdjacencyMatrix(CancellationToken cancellationToken = default)
         {
             if (string.IsNullOrWhiteSpace(filePath))
             {
