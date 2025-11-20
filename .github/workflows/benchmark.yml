@@ -1,0 +1,72 @@
+name: Benchmark Algorithms
+
+on:
+  workflow_dispatch:
+
+jobs:
+  benchmarks:
+    name: Benchmarks (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    environment: development
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - ubuntu-24.04-arm
+          - windows-latest
+          - windows-11-arm
+          - macos-15-intel
+          - macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: .NET Restore
+        run: dotnet restore
+
+      - name: .NET Build
+        run: dotnet build --no-restore -c Release
+
+      - name: Run Benchmarks
+        run: dotnet run -c Release --project src/A3.RouteSearchGraphs.Benchmarks/
+
+      - name: Publish Summary
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          REPORT=$(find src/A3.RouteSearchGraphs.Benchmarks -name "*GraphSearchBenchmarks-report-github.md" | head -n 1)
+
+          echo "### Benchmark summary (${{ matrix.os }})" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+
+          if [ -z "$REPORT" ]; then
+            echo "_No benchmark report markdown found._" >> "$GITHUB_STEP_SUMMARY"
+          else
+            cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Publish Summary
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $report = Get-ChildItem -Recurse "src/A3.RouteSearchGraphs.Benchmarks" -Filter "*GraphSearchBenchmarks-report-github.md" | Select-Object -First 1
+
+          Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "### Benchmark summary (${{ matrix.os }})"
+          Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value ""
+
+          if (-not $report) {
+              Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "_No benchmark report markdown found._"
+          }
+          else {
+              Get-Content $report.FullName | Add-Content -Path $env:GITHUB_STEP_SUMMARY
+          }
