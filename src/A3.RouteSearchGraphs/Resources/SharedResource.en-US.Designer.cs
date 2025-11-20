@@ -104,5 +104,29 @@ namespace A3.RouteSearchGraphs.Resources {
                 return ResourceManager.GetString("heuristic_kind_manhattan", resourceCulture);
             }
         }
+        
+        internal static string report_written {
+            get {
+                return ResourceManager.GetString("report_written", resourceCulture);
+            }
+        }
+        
+        internal static string error {
+            get {
+                return ResourceManager.GetString("error", resourceCulture);
+            }
+        }
+        
+        internal static string execution {
+            get {
+                return ResourceManager.GetString("execution", resourceCulture);
+            }
+        }
+        
+        internal static string with_heuristic {
+            get {
+                return ResourceManager.GetString("with_heuristic", resourceCulture);
+            }
+        }
     }
 }

@@ -48,4 +48,16 @@
     <data name="heuristic_kind_euclidean" xml:space="preserve">
         <value>EUCLIDIANA</value>
     </data>
+    <data name="report_written" xml:space="preserve">
+        <value>Relatório salvo em</value>
+    </data>
+    <data name="error" xml:space="preserve">
+        <value>Erro</value>
+    </data>
+    <data name="execution" xml:space="preserve">
+        <value>Algoritmo {0} executado em {1} ms</value>
+    </data>
+    <data name="with_heuristic" xml:space="preserve">
+        <value>usando a heuristica</value>
+    </data>
 </root>

@@ -48,4 +48,16 @@
     <data name="heuristic_kind_manhattan" xml:space="preserve">
         <value>MANHATTAN</value>
     </data>
+    <data name="report_written" xml:space="preserve">
+        <value>Report saved to</value>
+    </data>
+    <data name="error" xml:space="preserve">
+        <value>Error</value>
+    </data>
+    <data name="execution" xml:space="preserve">
+        <value>Algorithm {0} executed in {1} ms</value>
+    </data>
+    <data name="with_heuristic" xml:space="preserve">
+        <value>with heuristic</value>
+    </data>
 </root>
