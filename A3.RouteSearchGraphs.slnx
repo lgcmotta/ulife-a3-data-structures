@@ -9,6 +9,9 @@
     <File Path="README.md" />
     <File Path="LICENSE" />
   </Folder>
+  <Folder Name="/Solution Items/.github/workflows/">
+    <File Path=".github/workflows/publish.yml" />
+  </Folder>
   <Folder Name="/Solution Items/assets/">
     <File Path="assets/assignment.pdf" />
   </Folder>
