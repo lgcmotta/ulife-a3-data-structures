@@ -15,7 +15,8 @@ internal static class RunCommand
     {
         internal CoconaApp AddRunCommand()
         {
-            app.AddCommand(name: "run", ExecuteRunCommandAsync);
+            app.AddCommand(name: "run", ExecuteRunCommandAsync)
+                .WithDescription("run_description");
 
             return app;
         }

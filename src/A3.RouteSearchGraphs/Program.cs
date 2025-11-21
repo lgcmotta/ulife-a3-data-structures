@@ -14,6 +14,7 @@ var builder = CoconaApp.CreateBuilder(args);
 builder.Logging.AddConsole();
 builder.Services.AddAnsiConsole();
 builder.Services.AddReportLocalization();
+builder.Services.AddCommandsLocalization();
 
 var app = builder.Build();
 

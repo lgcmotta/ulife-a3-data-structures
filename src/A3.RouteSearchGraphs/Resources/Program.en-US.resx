@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="file" xml:space="preserve">
+        <value>File path containing adjacency matrices.</value>
+    </data>
+    <data name="origin" xml:space="preserve">
+        <value>Vertex of origin in the adjacency matrix.</value>
+    </data>
+    <data name="target" xml:space="preserve">
+        <value>Destination vertex in the adjacency matrix.</value>
+    </data>
+    <data name="out" xml:space="preserve">
+        <value>Destination directory for execution reports.</value>
+    </data>
+    <data name="lang" xml:space="preserve">
+        <value>Language of the reports.</value>
+    </data>
+    <data name="help" xml:space="preserve">
+        <value>Show help message.</value>
+    </data>
+    <data name="run_description" xml:space="preserve">
+        <value>It executes search algorithms on graphs represented by adjacency matrices and generates reports in .txt format.</value>
+    </data>
+</root>

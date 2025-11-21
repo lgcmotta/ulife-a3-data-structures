@@ -8,7 +8,8 @@
       "applicationUrl": "http://localhost:5042",
       "commandLineArgs": "run --file ../../samples/matrix_4x4.txt --origin 0 --dest 15 --out ../../results --lang pt-BR",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "LANG": "pt-BR"
       }
     }
   }
