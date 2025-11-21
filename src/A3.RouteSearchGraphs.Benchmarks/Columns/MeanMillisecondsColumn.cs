@@ -1,8 +1,11 @@
+using System.Globalization;
 using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
 
 namespace A3.RouteSearchGraphs.Columns;
+
+using static System.FormattableString;
 
 public class MeanMillisecondsColumn : IColumn
 {
@@ -34,6 +37,8 @@ public class MeanMillisecondsColumn : IColumn
     {
         var stats = summary.Reports.First(br => br.BenchmarkCase == benchmarkCase).ResultStatistics;
 
-        return stats is not null ? (stats.Mean / 1_000_000.0D).ToString("F4") : "?";
+        return stats is not null
+            ? Invariant($"{(stats.Mean / 1_000_000.0D):F4} ms")
+            : "?";
     }
 }
