@@ -7,7 +7,7 @@ jobs:
   benchmarks:
     name: Benchmarks (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
-    environment: development
+    environment: benchmarks
 
     strategy:
       fail-fast: false
