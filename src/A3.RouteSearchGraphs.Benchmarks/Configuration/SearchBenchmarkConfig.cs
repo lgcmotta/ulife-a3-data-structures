@@ -8,6 +8,7 @@ public class SearchBenchmarkConfig : ManualConfig
     public SearchBenchmarkConfig()
     {
         WithArtifactsPath("./artifacts");
+        AddColumn(new MeanMillisecondsColumn());
         AddColumn(new IterationCountColumn());
     }
 }
