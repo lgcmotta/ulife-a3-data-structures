@@ -46,7 +46,7 @@ jobs:
         run: |
           REPORT=$(find src/A3.RouteSearchGraphs.Benchmarks -name "*GraphSearchBenchmarks-report-github.md" | head -n 1)
 
-          echo "### Benchmark summary (${{ matrix.os }})" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Benchmark summary (${{ runner.os }} - ${{ runner.arch }})" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
 
           if [ -z "$REPORT" ]; then
@@ -61,7 +61,7 @@ jobs:
         run: |
           $report = Get-ChildItem -Recurse "src/A3.RouteSearchGraphs.Benchmarks" -Filter "*GraphSearchBenchmarks-report-github.md" | Select-Object -First 1
 
-          Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "### Benchmark summary (${{ matrix.os }})"
+          Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "### Benchmark summary (${{ runner.os }} - ${{ runner.arch }})"
           Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value ""
 
           if (-not $report) {
