@@ -5,7 +5,7 @@ This project is the final assignment for my Data Structures and Algorithm Analys
 The complete assignment instructions are available in PDF format and only in Portuguese (Brazil).
 You can find it [here](https://github.com/lgcmotta/ulife-a3-data-structures/blob/main/assets/assignment.pdf).
 
-## Installation
+## Installation 🤓
 
 The application can be installed as a [dotnet global tool](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools).
 
@@ -15,7 +15,7 @@ Download and install the .NET 10 SDK from the official website: [Download .NET 1
 
 > ⚠️ Download the .NET installer based on your OS and architecture. 
 
-### Create a Classic GitHub Personal Access Token (PAT) 🔐
+### Create a Classic GitHub Personal Access Token (PAT) 🔑
 
 Although the repository is public, GitHub **always requires authentication** when you want to use a GitHub Packages feed (NuGet).  
 You must create a **Personal Access Token (classic)** so the `dotnet` CLI can authenticate when adding the package source.
@@ -31,7 +31,7 @@ You must create a **Personal Access Token (classic)** so the `dotnet` CLI can au
 
 7. Generate the token and copy the value (you will need it for the `dotnet nuget` commands).
 
-### Register GitHub as a NuGet Source
+### Register GitHub as a NuGet Source 📂
 
 Locate your NuGet.config file:
 
@@ -51,7 +51,7 @@ Then run the following command, replacing:
 - **<GITHUB_PAT>**: The Personal Access Token you created  
 - **<NUGET_CONFIG_FILE_PATH>**: The path from the table above
 
-#### Windows (PowerShell)
+#### Windows (PowerShell) 🪟
 
 ```pwsh
 dotnet nuget add source --name github `
@@ -61,7 +61,7 @@ dotnet nuget add source --name github `
   --configfile <NUGET_CONFIG_FILE_PATH> "https://nuget.pkg.github.com/lgcmotta/index.json"
 ```
 
-#### Linux/MacOS
+#### Linux/MacOS 🍎
 
 ```bash
 dotnet nuget add source --name github \
@@ -71,7 +71,7 @@ dotnet nuget add source --name github \
   --configfile <NUGET_CONFIG_FILE_PATH> "https://nuget.pkg.github.com/lgcmotta/index.json"
 ```
 
-### Install the Tool
+### Install the Tool 🧰
 
 With the GitHub NuGet source registered, you can now install the application as a global tool:
 
@@ -85,7 +85,7 @@ After installation, the `rsg` command becomes available system-wide. You can ver
 rsg --version
 ```
 
-## Usage
+## Usage 💻
 
 The `run` command executes the graph search algorithms using an adjacency-matrix input file and generates a `.txt` report with the results.
 
@@ -109,6 +109,6 @@ The `run` commands support the following parameters:
 | `-h` or `--help`   | **false** | Show help message.                                            |
 
 
-### Live Demo
+### Live Demo ⏯️
 
 https://github.com/user-attachments/assets/9d054444-c365-439b-8d16-057719ab0fbc
