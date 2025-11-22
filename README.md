@@ -71,7 +71,7 @@ dotnet nuget add source --name github \
   --configfile <NUGET_CONFIG_FILE_PATH> "https://nuget.pkg.github.com/lgcmotta/index.json"
 ```
 
-### Install the Toll
+### Install the Tool
 
 With the GitHub NuGet source registered, you can now install the application as a global tool:
 
@@ -87,4 +87,28 @@ rsg --version
 
 ## Usage
 
-TDB
+The `run` command executes the graph search algorithms using an adjacency-matrix input file and generates a `.txt` report with the results.
+
+The `run` commands support language switch for the generated reports; the default is Portuguese (Brazil). But English is also available.
+
+The basic syntax is:
+
+```bash
+rsg run --file <PATH> --origin <VERTEX> --target <VERTEX> [options]
+```
+
+The `run` commands support the following parameters:
+
+| Option             | Required  | Description                                                   |
+|--------------------|-----------|---------------------------------------------------------------|
+| `-f`  or `--file`  | **true**  | File path containing the adjacency matrix.                    |
+| `-s` or `--origin` | **true**  | Vertex of origin in the adjacency matrix.                     |
+| `-t` or `--target` | **true**  | Destination vertex in the adjacency matrix.                   |
+| `-o` or `--out`    | **false** | Destination directory for execution reports.                  |
+| `-l` or `--lang`   | **false** | Language of the reports. Either `pt-BR` (default) or `en-US`. |
+| `-h` or `--help`   | **false** | Show help message.                                            |
+
+
+### Live Demo
+
+https://github.com/user-attachments/assets/9d054444-c365-439b-8d16-057719ab0fbc
