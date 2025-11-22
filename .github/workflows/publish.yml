@@ -37,7 +37,7 @@ jobs:
 
       - name: .NET Pack
         shell: bash
-        run: dotnet pack -c Release --output ./nupkg /p:PackageVersion=${{ steps.versioning.outputs.version }}
+        run: dotnet pack src/A3.RouteSearchGraphs/ -c Release --output ./nupkg /p:PackageVersion=${{ steps.versioning.outputs.version }}
 
       - name: GitHub NuGet Source
         shell: bash
