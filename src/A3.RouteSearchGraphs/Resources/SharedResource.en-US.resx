@@ -60,4 +60,22 @@
     <data name="with_heuristic" xml:space="preserve">
         <value>with heuristic</value>
     </data>
+    <data name="file_option" xml:space="preserve">
+        <value>File path containing adjacency matrices.</value>
+    </data>
+    <data name="help_option" xml:space="preserve">
+        <value>Show help message.</value>
+    </data>
+    <data name="lang_option" xml:space="preserve">
+        <value>Language of the reports.</value>
+    </data>
+    <data name="origin_option" xml:space="preserve">
+        <value>Vertex of origin in the adjacency matrix.</value>
+    </data>
+    <data name="out_option" xml:space="preserve">
+        <value>Destination directory for execution reports.</value>
+    </data>
+    <data name="run_description" xml:space="preserve">
+        <value>It executes search algorithms on graphs represented by adjacency matrices and generates reports in .txt format.</value>
+    </data>
 </root>

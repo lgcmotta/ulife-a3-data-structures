@@ -6,11 +6,11 @@ namespace A3.RouteSearchGraphs.Translations;
 
 internal class CoconaLocalizer(IStringLocalizerFactory factory) : ICoconaLocalizer
 {
-    private readonly IStringLocalizer _localizer = factory.Create(typeof(Program));
+    private readonly IStringLocalizer _localizer = factory.Create(typeof(SharedResource));
 
     public string GetCommandDescription(CommandDescriptor command)
     {
-        return _localizer.GetString(command.Name is "ShowHelp" ? "help" : command.Description);
+        return _localizer.GetString(command.Name is "ShowHelp" ? "help_option" : command.Description);
     }
 
     public string GetOptionDescription(CommandDescriptor command, ICommandOptionDescriptor option)
