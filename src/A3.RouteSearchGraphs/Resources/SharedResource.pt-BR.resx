@@ -61,7 +61,7 @@
         <value>usando a heuristica</value>
     </data>
     <data name="file_option" xml:space="preserve">
-        <value>Caminho do arquivo com a matrize de adjacências.</value>
+        <value>Caminho do arquivo com a matriz de adjacências.</value>
     </data>
     <data name="help_option" xml:space="preserve">
         <value>Mostrar mensagem de ajuda.</value>
@@ -77,5 +77,8 @@
     </data>
     <data name="run_description" xml:space="preserve">
         <value>Executa os algoritmos de busca em grafos representados por matrizes de adjacência e gera relatórios no formato .txt.</value>
+    </data>
+    <data name="target_option" xml:space="preserve">
+        <value>Vértice de destino na matriz de adjacências.</value>
     </data>
 </root>
