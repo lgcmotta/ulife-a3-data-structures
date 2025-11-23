@@ -5,6 +5,15 @@ This project is the final assignment for my Data Structures and Algorithm Analys
 The complete assignment instructions are available in PDF format and only in Portuguese (Brazil).
 You can find it [here](https://github.com/lgcmotta/ulife-a3-data-structures/blob/main/assets/assignment.pdf).
 
+## Assignment Reports
+
+The assignment report results are available in English (US) and Portuguese (Brazil)
+
+| Report                         |    Language    |
+|:-------------------------------|:--------------:|
+| [REPORT](docs/REPORT.en-US.md) |  **English**   |
+| [REPORT](docs/REPORT.pt-BR.md) | **Portuguese** |
+
 ## Installation 🤓
 
 The application can be installed as a [dotnet global tool](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools).
