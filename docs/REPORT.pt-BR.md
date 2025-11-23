@@ -69,13 +69,14 @@ Os testes com BenchmarkDotNet foram executados usando [GitHub Actions](https://g
 A estrutura do relatório de execução gerado por algoritmo é:
 
 ```txt
-ALGORITHM: <nome do algoritmo>
-HEURISTIC: <Manhattan / Euclidean / vazio>
-SOURCE / TARGET
-PATH: <sequência de índices de nós>
-COST: <soma dos pesos>
-EXPANDED NODES: <contagem>
-TIME (ms): <tempo de execução única>
+ALGORITMO: <nome do algoritmo>
+HEURÍSTICA: <Manhattan / Euclidiana / vazio>
+ORIGEM: <vértice de origem>
+DESTINO: <vértice de destino>
+CAMINHO: <sequência de índices de nós>
+CUSTO: <soma dos pesos>
+NÓS EXPANDIDOS: <contagem>
+TEMPO (ms): <tempo de execução única>
 ```
 
 ---
