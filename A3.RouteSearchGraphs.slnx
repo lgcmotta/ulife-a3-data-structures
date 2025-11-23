@@ -17,6 +17,23 @@
   <Folder Name="/Solution Items/assets/">
     <File Path="assets/assignment.pdf" />
   </Folder>
+  <Folder Name="/Solution Items/docs/">
+    <File Path="docs/REPORT.en-US.md" />
+  </Folder>
+  <Folder Name="/Solution Items/docs/images/">
+    <File Path="docs/images/astar_path_cost_comparison.png" />
+    <File Path="docs/images/astar_performance_scaling.png" />
+    <File Path="docs/images/bfs_search_space.png" />
+    <File Path="docs/images/cross_platform_execution_time_comparison.png" />
+    <File Path="docs/images/dfs_path_cost_comparison.png" />
+    <File Path="docs/images/dijkstra_vs_astar_expanded_nodes.png" />
+    <File Path="docs/images/execution_time_vs_size_all_algorithms.png" />
+    <File Path="docs/images/gbfs_cost_variability.png" />
+    <File Path="docs/images/gbfs_path_cost_comparison.png" />
+    <File Path="docs/images/nodes_expanded_vs_size.png" />
+    <File Path="docs/images/path_cost_vs_optimal_all_algorithms.png" />
+    <File Path="docs/images/summary_infographic.png" />
+  </Folder>
   <Folder Name="/Solution Items/samples/">
     <File Path="samples/matrix_3x3.txt" />
     <File Path="samples/matrix_4x4.txt" />
